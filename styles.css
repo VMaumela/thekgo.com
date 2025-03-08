@@ -106,52 +106,44 @@ section {
     padding: 50px;
 }
 
-/* Services Section */
-#services {
+/* About Section */
+#about {
+    background-color: #d9e8f5; 
     text-align: center;
     padding: 60px 20px;
-    background-color: #ffffff;
 }
-#services h2 {
-    font-size: 2.2rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Three-column layout */
-    gap: 20px;
-    max-width: 1000px;
+.about-container {
+    max-width: 800px;
     margin: auto;
 }
-.service-category {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: left;
-}
-.service-category:nth-child(2) {
-    background-color: #d9e8f5; /* Alternating blue background */
-}
-.service-category h3 {
-    font-size: 1.5rem;
+.about-container h2 {
+    font-size: 2.2rem;
     color: #333;
-    margin-bottom: 10px;
 }
-.service-category ul {
-    list-style-type: none;
-    padding: 0;
-}
-.service-category li {
-    font-size: 1.1rem;
+.about-container p {
+    font-size: 1.2rem;
     color: #555;
-    padding: 5px 0;
+    line-height: 1.8; /* Adds spacing between lines */
+    margin-bottom: 20px;
+}
+.about-stats {
+    list-style: none; /* Removes black bullet points */
+    padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.service-category li::before {
-    content: "✔️";
+.about-stats li {
     font-size: 1.2rem;
-    margin-right: 8px;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns text properly */
+    gap: 10px; /* Adds spacing between icon and text */
+}
+.about-stats li::before {
+    content: "✔️";
+    font-size: 1.5rem;
     color: #ff6600;
 }
