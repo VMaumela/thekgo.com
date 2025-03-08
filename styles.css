@@ -22,17 +22,27 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align items to the left */
     background-color: #333;
     color: white;
     padding: 10px 20px;
     height: 60px; /* Adjusted to match logo height */
 }
 
+/* Ensure logo stays on the left */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 /* Navigation Menu */
 nav {
-    position: relative;
-    right: 20px; /* Keeps the menu aligned to the right */
+    margin-left: auto; /* Push navigation to the right */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 /* Hero Section Styling */
