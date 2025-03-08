@@ -97,51 +97,11 @@ section {
     padding: 50px;
 }
 
-/* About Section */
-#about {
-    background-color: #d9e8f5; 
-    text-align: center;
-    padding: 60px 20px;
-}
-.about-container {
-    max-width: 800px;
-    margin: auto;
-}
-.about-container h2 {
-    font-size: 2.2rem;
-    color: #333;
-}
-.about-container p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8; /* Adds spacing between lines */
-    margin-bottom: 20px;
-}
-.about-stats {
-    list-style: none; /* Removes black bullet points */
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about-stats li {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligns text properly */
-    gap: 10px; /* Adds spacing between icon and text */
-}
-.about-stats li span {
-    font-size: 1.5rem;
-}
-
 /* Services Section */
 #services {
-    background-color: #ffffff;
     text-align: center;
     padding: 60px 20px;
+    background-color: #ffffff;
 }
 #services h2 {
     font-size: 2.2rem;
@@ -160,6 +120,9 @@ section {
     padding: 20px;
     border-radius: 8px;
     text-align: left;
+}
+.service-category:nth-child(2) {
+    background-color: #d9e8f5; /* Alternating blue background */
 }
 .service-category h3 {
     font-size: 1.5rem;
@@ -183,4 +146,3 @@ section {
     margin-right: 8px;
     color: #ff6600;
 }
-
