@@ -277,7 +277,7 @@ section {
 
 /* Image Modal Styling */
 .modal {
-    display: none; /* Hidden by default */
+    display: none; /* Ensure it starts hidden */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -285,10 +285,10 @@ section {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .modal-content {
     max-width: 80%;
