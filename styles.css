@@ -11,9 +11,10 @@ body {
 /* Logo Styling */
 .logo {
     height: 100%; 
-    max-height: 70px;
+    max-height: 60px; /* Adjusted to fit within header */
     width: auto;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     display: block;
 }
 
@@ -21,17 +22,16 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers the text */
+    justify-content: space-between;
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    height: 70px;
-    position: relative;
+    height: 60px; /* Adjusted to match logo height */
 }
 
 /* Navigation Menu */
 nav {
-    position: absolute;
+    position: relative;
     right: 20px; /* Keeps the menu aligned to the right */
 }
 
