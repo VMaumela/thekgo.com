@@ -1,0 +1,40 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('your-image.jpg') center/cover no-repeat;
+    color: white;
+    padding: 50px;
+}
+.cta-button {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+}
