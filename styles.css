@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -28,17 +30,51 @@ nav a {
     margin: 0 10px;
 }
 
-/* Hero Section */
+/* Hero Section Styling */
 .hero {
-    background: url('your-image.jpg') center/cover no-repeat;
-    color: white;
-    padding: 50px;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4; /* Light background so text is visible */
+}
+
+/* Hero Content (Centers Everything) */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Hero Title */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Ensure text is visible */
+    margin-bottom: 10px;
+}
+
+/* Hero Subheading */
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* CTA Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 .cta-button {
-    background: orange;
+    background-color: #ff6600;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1rem;
+}
+.cta-button.secondary {
+    background-color: #333;
 }
 
 /* Sections */
