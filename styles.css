@@ -255,12 +255,14 @@ section {
 }
 
 .projects-gallery img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Makes sure images fill their container */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images keep their aspect ratio */
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
+
 
 .projects-gallery img:hover {
     transform: scale(1.05);
