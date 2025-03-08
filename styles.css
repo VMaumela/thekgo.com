@@ -99,11 +99,15 @@ section {
 .about-container p {
     font-size: 1.2rem;
     color: #555;
+    line-height: 1.8; /* Adds spacing between lines */
     margin-bottom: 20px;
 }
 .about-stats {
-    list-style: none;
+    list-style: none; /* Removes black bullet points */
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .about-stats li {
     font-size: 1.2rem;
@@ -111,10 +115,9 @@ section {
     margin: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Aligns text properly */
+    gap: 10px; /* Adds spacing between icon and text */
 }
-.about-stats li::before {
-    content: "✅ ";
+.about-stats li span {
     font-size: 1.5rem;
-    margin-right: 10px;
 }
