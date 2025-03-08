@@ -127,7 +127,7 @@ section {
     margin-bottom: 20px;
 }
 .about-stats {
-    list-style: none; /* Removes black bullet points */
+    list-style: none !important; /* Ensures no bullet points */
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -146,4 +146,5 @@ section {
     content: "✔️";
     font-size: 1.5rem;
     color: #ff6600;
+    margin-right: 8px;
 }
