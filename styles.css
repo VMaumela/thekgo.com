@@ -136,3 +136,51 @@ section {
 .about-stats li span {
     font-size: 1.5rem;
 }
+
+/* Services Section */
+#services {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+#services h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Three-column layout */
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.service-category {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+.service-category h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.service-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+.service-category li {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+.service-category li::before {
+    content: "✔️";
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: #ff6600;
+}
+
