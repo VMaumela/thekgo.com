@@ -97,30 +97,27 @@ nav a {
     }
 }
 
-/* About Stats List - Remove Black Bullet Points */
+/* About Stats List - Force Remove Bullet Points */
 .about-stats {
-    list-style: none !important;  /* Removes default bullets */
-    padding: 0;  /* Removes default padding */
-    margin: 0;  /* Removes extra spacing */
+    list-style: none !important;  /* Ensures no bullets */
+    padding: 0 !important;  /* Removes default padding */
+    margin: 0 !important;  /* Removes extra spacing */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;  /* Ensures left alignment */
 }
 
+/* Ensure List Items Are Properly Styled */
 .about-stats li {
+    list-style-type: none !important; /* Double check bullets are removed */
     font-size: 1.1rem;
     color: #333;
     margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px; /* Adds spacing between checkmark and text */
+    gap: 10px;
 }
-
-.about-stats li span {
-    font-size: 1.5rem;
-}
-
 /* Hero Subheading */
 .hero p {
     font-size: 1.2rem;
