@@ -81,3 +81,40 @@ nav a {
 section {
     padding: 50px;
 }
+
+/* About Section */
+#about {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+.about-container h2 {
+    font-size: 2.2rem;
+    color: #333;
+}
+.about-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.about-stats {
+    list-style: none;
+    padding: 0;
+}
+.about-stats li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-stats li::before {
+    content: "✅ ";
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
