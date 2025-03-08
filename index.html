@@ -125,12 +125,32 @@
     <img class="modal-content" id="modalImg">
 </div>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@thekgo.com</p>
-       <!-- <p>Phone: +27 83 257 3511</p> -->
-    </section>
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@thekgo.com</p>
+    
+    <h3>Request a Quote</h3>
+    <form action="submit_form.php" method="POST" enctype="multipart/form-data" class="quote-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="attachments">Attachments</label>
+        <input type="file" id="attachments" name="attachments[]" multiple>
+
+        <button type="submit" class="cta-button">Submit Quote</button>
+    </form>
+</section>
+
 
     <script src="script.js"></script>
 </body>
