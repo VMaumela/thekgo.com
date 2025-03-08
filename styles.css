@@ -97,16 +97,17 @@ nav a {
     }
 }
 
-/* Fix Key Stats Layout */
+
 .about-stats {
     list-style: none !important;
     padding: 0 !important;
-    margin: 0 auto !important; /* Centering */
+    margin: 0 auto !important; /* Ensures centering */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align left */
-    max-width: 500px; /* Controls width */
+    align-items: center; /* Centers the list */
+    text-align: center; /* Ensures text is also centered */
 }
+
 
 /* List Items */
 .about-stats li {
