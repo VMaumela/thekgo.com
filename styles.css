@@ -22,7 +22,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: space-between; /* Ensures logo stays left, nav stays right */
     background-color: #333;
     color: white;
     padding: 10px 20px;
@@ -37,12 +37,36 @@ header {
 
 /* Navigation Menu */
 nav {
-    margin-left: auto; /* Push navigation to the right */
+    display: flex;
+    gap: 15px;
 }
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+    font-size: 1rem;
+}
+
+/* Mobile Header Fix */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .logo-container {
+        justify-content: center;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    nav a {
+        font-size: 0.9rem;
+        margin: 5px;
+    }
 }
 
 /* Hero Section Styling */
@@ -192,3 +216,4 @@ section {
     margin-right: 8px;
     color: #ff6600;
 }
+
