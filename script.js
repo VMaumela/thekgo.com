@@ -1,6 +1,9 @@
 console.log("Website loaded successfully!");
 
-// Select all images with the popup class
+
+document.getElementById("imageModal").style.display = "none";
+
+
 const images = document.querySelectorAll(".popup-img");
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImg");
@@ -25,4 +28,3 @@ modal.addEventListener("click", function(event) {
         modal.style.display = "none";
     }
 });
-
