@@ -28,3 +28,23 @@ modal.addEventListener("click", function(event) {
         modal.style.display = "none";
     }
 });
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get section ID
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            const headerOffset = 70; // Adjust for fixed header height
+            const elementPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
