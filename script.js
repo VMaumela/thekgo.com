@@ -48,3 +48,22 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            const headerHeight = document.querySelector("header").offsetHeight; // Get header height
+            const elementPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerHeight - 10; // Extra offset
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
