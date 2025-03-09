@@ -4,7 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 60;
     text-align: center;
 }
 
@@ -29,6 +29,14 @@ header {
     height: 60px;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #333; 
+}
 /* Ensure logo stays on the left */
 .logo-container {
     display: flex;
